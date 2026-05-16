@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Liam Murphy | Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/x-icon" href="media/icons/site.ico">
+</head>
+<body class="page page-home" data-page="home" data-enter-mode="gate">
+    <video id="bg-video" class="bg-video bg-video--landscape" muted loop playsinline webkit-playsinline preload="metadata" poster="media/images/poster.png">
+        <source src="media/video/new.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <button id="enter-screen" class="enter-screen" type="button" aria-label="Enter site">
+        <video id="enter-video" class="enter-screen__video enter-screen__video--horizontal" muted loop autoplay playsinline webkit-playsinline preload="metadata" poster="media/images/poster.png">
+            <source src="media/intro/darling-intro.mp4" type="video/mp4">
+        </video>
+        <span class="enter-screen__overlay"></span>
+        <span id="enter-text" class="enter-screen__label">click to enter...</span>
+    </button>
+
+    <div id="site-shell" class="site-shell is-hidden">
+        <main class="card card--home">
+            <header class="profile">
+                <div class="profile__avatar-wrap">
+                    <img class="profile__avatar" src="media/images/ava.gif" alt="Liam Murphy avatar">
+                </div>
+                <p class="profile__eyebrow">fullstack developer</p>
+                <h1>лиам мёрфи</h1>
+                <p class="profile__subtitle">custom builds, private systems, clean frontend and backend work</p>
+            </header>
+
+            <section class="links-section" aria-label="Main links">
+                <a class="link-card" href="pages/about.html">
+                    <span class="link-card__title">обо мне</span>
+                    <span class="link-card__meta">отдельная страница с музыкой и коротким описанием</span>
+                </a>
+
+                <a class="link-card" target="_blank" rel="noreferrer" href="https://t.me/mulori">
+                    <span class="link-card__title">тг</span>
+                    <span class="link-card__meta">@mulori</span>
+                </a>
+
+                <a class="link-card" href="pages/projects.html">
+                    <span class="link-card__title">проекты</span>
+                    <span class="link-card__meta">отдельная страница с кейсами и закрытыми работами</span>
+                </a>
+
+                <a class="link-card" href="pages/price.html">
+                    <span class="link-card__title">прайс</span>
+                    <span class="link-card__meta">отдельная страница с fullstack услугами</span>
+                </a>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Created by Liam</p>
+        </footer>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
 
